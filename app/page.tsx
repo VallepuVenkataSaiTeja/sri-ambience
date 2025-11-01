@@ -729,8 +729,7 @@ export default function Home() {
                   <div className="ml-4">
                     <h4 className="font-semibold mb-1">Phone / Cell</h4>
                     <p className="text-primary-100 mb-1">Call us for inquiries and bookings</p>
-                    <a href="tel:+91XXXXXXXXXX" className="text-primary-50 hover:text-white transition block">+91 XXXXXXXXXX</a>
-                    <a href="tel:+91XXXXXXXXXX" className="text-primary-50 hover:text-white transition block">+91 XXXXXXXXXX</a>
+                    <a href="tel:+918985261542" className="text-primary-50 hover:text-white transition block">+91 8985261542</a>
                   </div>
                 </div>
                 <div className="flex items-start">
