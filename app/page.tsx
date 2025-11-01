@@ -32,7 +32,6 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   return (
     <main className="min-h-screen">
@@ -268,8 +267,7 @@ export default function Home() {
             ].map((image, index) => (
               <div
                 key={index}
-                className="relative group cursor-pointer overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
-                onClick={() => setSelectedImage(image.url)}
+                className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
               >
                 <div className="aspect-w-16 aspect-h-12 bg-gray-200">
                   <img
@@ -287,33 +285,6 @@ export default function Home() {
             ))}
           </div>
         </div>
-
-        {/* Image Modal */}
-        {selectedImage && (
-          <div
-            className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
-            onClick={() => setSelectedImage(null)}
-          >
-            <div className="relative max-w-5xl w-full max-h-[90vh]">
-              <button
-                onClick={(e) => {
-                  e.stopPropagation()
-                  setSelectedImage(null)
-                }}
-                className="absolute -top-12 sm:-top-10 right-0 sm:right-auto sm:left-full sm:ml-2 text-white hover:text-primary-400 transition text-2xl sm:text-3xl font-bold bg-black/50 rounded-full w-10 h-10 sm:w-auto sm:h-auto sm:bg-transparent flex items-center justify-center"
-                aria-label="Close"
-              >
-                ✕
-              </button>
-              <img
-                src={selectedImage}
-                alt="Gallery view"
-                className="max-w-full max-h-[90vh] object-contain rounded-lg"
-                onClick={(e) => e.stopPropagation()}
-              />
-            </div>
-          </div>
-        )}
       </section>
 
       {/* Pricing Section */}
