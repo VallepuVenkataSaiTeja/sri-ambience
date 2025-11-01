@@ -8,7 +8,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
   return (
     <div className="mb-4 border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow">
       <button
-        className="w-full px-4 sm:px-6 py-3 sm:py-4 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-primary-500"
+        className="w-full px-4 sm:px-6 py-3 sm:py-4 text-left flex items-center justify-between focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span className="font-semibold text-gray-900 pr-4 text-sm sm:text-base">{question}</span>
