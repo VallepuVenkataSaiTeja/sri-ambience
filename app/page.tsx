@@ -778,12 +778,14 @@ export default function Home() {
                     className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg bg-white/20 border border-white/30 text-white text-sm sm:text-base placeholder-primary-200 focus:outline-none focus:ring-2 focus:ring-white/50 resize-none"
                   ></textarea>
                 </div>
-                <button
-                  type="submit"
-                  className="w-full px-6 py-3 bg-white text-primary-700 rounded-lg font-semibold hover:bg-primary-50 transition shadow-lg text-sm sm:text-base"
+                <a
+                  href="https://wa.me/918985261542"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full px-6 py-3 bg-white text-primary-700 rounded-lg font-semibold hover:bg-primary-50 transition shadow-lg text-sm sm:text-base text-center block"
                 >
                   Send Message
-                </button>
+                </a>
               </form>
             </div>
           </div>
